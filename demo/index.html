@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>particles.js</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="" href="/demo/css/style.css">
+  <link rel="stylesheet" media="" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+
+
+<!-- particles.js container -->
+<div id="particles-js">
+  <div class="container">
+    <h1>john kevin</h1>
+    <h2>Web developer <i class="fa-solid fa-user-ninja"></i></h2>
+
+    <!--MODAL-->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">explore at will</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-dark">
+        <!--LISTAS BOOTSTRAP-->
+        <ul class="list-group list-group-flush">
+         <a href="/views/projects/htmlcss.html"> <li  class="list-group-item"><i class="fa-brands fa-html5"><i class="fa-brands fa-css3"></i></i>HTML / CSS</li></a>
+         <a href="/views/projects/htmlcss.html"> <li class="list-group-item"><i class="fa-brands fa-php"></i>PHP</li></a>
+         <a href="/views/projects/htmlcss.html"> <li class="list-group-item"><i class="fa-brands fa-js"></i>JavaScript</li></a>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!--FIM MODAL-->
+    <a type="button" class="menu btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      Projetos
+    </a>
+    <a class="menu" href="">PHP</a>
+    <a class="menu" href="">Javascript</a>
+    <a class="menu" href="">HTML / CSS</a>
+
+  </div>
+</div>
+
+<section class="">
+  <!-- Footer -->
+  <footer class="text-center text-white" style="background-color: #012026;">
+    <!-- Grid container -->
+    <div class="container-fluid p-4 pb-0">
+      <!-- Section: CTA -->
+      <section class="">
+        <p class="d-flex justify-content-center align-items-center">
+          <span class="me-3">Contact</span>
+          <button type="button" class="btn btn-outline-light btn-rounded">
+            Sign up!
+          </button>
+        </p>
+      </section>
+      <!-- Section: CTA -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://www.devwebjohn.com/">www.devwebjohn.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</section>
+
+
+<!-- scripts -->
+<script src="./js/particles.js"></script>
+<script src="js/app.js"></script>
+
+<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  
+
+
+<!-- stats.js -->
+
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
+
+
+</body>
+</html>

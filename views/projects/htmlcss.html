@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="/demo/css/style.css">
+    <link rel="stylesheet" media="screen" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Projetos</title>
+</head>
+<body id="projetos">
+
+     <nav class="navbar navbar-expand-sm   navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Call</a>
+          </li>
+          </ul>
+          <div class="social-part">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container container-project">
+          <h1>Projetos desenvolvidos</h1>
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <a href="/w3images/lights.jpg">
+                  <img src="/demo/img/infusion.PNG" alt="Lights" style="width:100%">
+                  <div class="caption">
+                    <p>Lorem ipsum...</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <a href="/demo/img/infusion.PNG">
+                  <img src="/demo/img/hotel.png" alt="Nature" style="width:100%">
+                  <div class="caption">
+                    <p>Lorem ipsum...</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <a href="/w3images/fjords.jpg">
+                  <img src="/demo/img/esquinatacaca.PNG" alt="Fjords" style="width:100%">
+                  <div class="caption">
+                    <p>Lorem ipsum...</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                  <a href="/w3images/fjords.jpg">
+                    <img src="/demo/img/netflix.png" alt="Fjords" style="width:100%">
+                    <div class="caption">
+                      <p>Lorem ipsum...</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+          </div>
+      </div>
+
+    
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+    $('.navbar-light .dmenu').hover(function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+    }, function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideUp(105)
+    });
+    });
+
+    function year() {
+        const ano = document.querySelector('.text-muted');
+        const anoAtual = new Date();
+
+        ano.innerHTML = anoAtual.getFullYear();
+    }
+    year();
+</script>
+
+    
+</body>
+</html>
